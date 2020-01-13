@@ -54,13 +54,17 @@ body{
   border-radius: 5px;
 }
 
-.contents .section{
+.section{
   background-color: white;
-  background-image: url("images/icon-skills.png");
+  background-image: url(images/icon-information.png);
   background-repeat: no-repeat;
   background-position: right 30px center;
   margin: 20px;
   padding: 20px;
+}
+
+.section.skills {
+  background-image: url(images/icon-skills.png);
 }
 
 .section h2{
