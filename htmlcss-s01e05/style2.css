@@ -1,0 +1,67 @@
+h1, p{
+  margin: 0;
+}
+
+body{
+  background-color: #222;
+}
+.wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+.section{
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    float: left;
+    width: 240px;
+    margin-right: 30px;
+}
+
+.section:last-child{
+    margin-right: 0;
+}
+
+.section.blue{
+  background-color: dodgerblue;
+  color: yellow;
+}
+.section.red{
+  background-color: orangered;
+  color: yellow;
+}
+.section.yellow{
+  background-color: yellow;
+  color: orangered;
+}
+
+.section h1{
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.section h1 span{
+    font-size: 0.5em;
+    margin: 0 0.35em;
+    opacity: 0.5;
+}
+
+.section h1 span::after{
+    content: 'kcal';
+    font-size: 0.5em;
+    margin: 0 0.1em;
+}
+
+
+.section-cover{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.section p{
+    line-height: 1.3;
+}
