@@ -1,0 +1,198 @@
+body, h1, p, h2{
+    margin: 0;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.wrapper{
+    width: 900px;
+    margin: 150px auto;
+}
+
+.sidebar, .contents{
+    border-radius: 3px;
+    background-color: white;
+}
+
+.sidebar{
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+    text-align: center;
+    color: #777;
+}
+
+.sidebar-section{
+    margin: 20px 0;
+}
+
+.contents{
+    padding: 30px;
+    overflow: hidden;
+}
+
+.cover{
+    width: 100%;
+    margin-top: -100px;
+}
+
+.title{
+    line-height: 1;
+    color: #6797b2;
+}
+
+.star::before,
+.star{
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    background-image: url(images/star-sprite.png);
+    overflow: hidden;
+}
+
+.star::before{
+    content: ' ';
+    display: block;
+    background-position: left bottom;
+    width: 0;
+}
+
+
+.star.s01::before{
+    width: 20%;
+}
+.star.s02::before{
+    width: 40%;
+}
+.star.s03::before{
+    width: 60%;
+}
+.star.s04::before{
+    width: 80%;
+}
+.star.s05::before{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+.price{
+    color: #6797b2;
+    font-size: 30px;
+}
+
+.price::before{
+    content: '$';
+    font-size: 0.7em;
+    margin-right: 0.2em;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+
+.button{
+    background-color: #6797b2;
+    display: block;
+    margin: 5px 20px;
+    padding: 12px 0 10px 0;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+}
+
+.button.share{
+    background-color: #aaa;
+}
+
+
+
+.section{
+    margin-bottom: 20px;
+}
+
+.section:last-child{
+    margin-bottom :0;
+}
+
+.section-title{
+    color: #6797b2;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.message{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.message:last-child{
+    margin-bottom: 0;
+}
+
+.message.answer .message-profile{
+    float: right;
+}
+
+.message.answer .message-profile::after{
+    display: none;
+}
+
+.message.answer .message-profile::before{
+    display: inline-block;
+}
+
+.message-profile{
+    float: left;
+}
+
+.message-profile img,
+.message-profile::after,
+.message-profile::before{
+    vertical-align: middle;
+}
+
+.message-profile img{
+    border-radius: 50%;
+    border: 5px solid #ddd;
+}
+
+.message.answer .message-profile img{
+    border-color: antiquewhite;
+}
+
+.message-profile::before,
+.message-profile::after{
+    content: ' ';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.message-profile::before{
+    border-color: transparent transparent transparent antiquewhite;
+    display: none;
+}
+
+.message-profile::after{
+    border-color: transparent #ddd transparent transparent;
+}
+
+.message-contents{
+    overflow: hidden;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+.message.answer .message-contents{
+    background-color: antiquewhite;
+}
